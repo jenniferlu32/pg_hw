@@ -1,0 +1,30 @@
+{
+  "name": "pg-hw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "build-dev": "npm run build -- --mode=development",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "nodemon app.js --ignore src/ --ignore dist/ & npm run build-dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.5.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "webpack": "^5.24.3",
+    "webpack-cli": "^4.5.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/preset-react": "^7.12.13",
+    "axios": "^0.21.1",
+    "babel-loader": "^8.2.2",
+    "nodemon": "^2.0.7"
+  }
+}
